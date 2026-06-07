@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project-2</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; 
+        background-color: aqua;
+        padding: 20px;
+      }
+      h2 {
+        font-size: 50px;
+        text-decoration: underline;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: white;
+      }
+      textarea {
+      width: 300px;
+      height: 120px;
+      font-size: 16px;
+      padding: 8px;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      resize: none;
+    }
+     #count {
+      font-size: 14px;
+      color: black;
+      margin-top: 6px;
+    }
+    #alerts {
+      display: none;
+      color: red;
+      font-size: 14px;
+      margin-top: 4px;
+    }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Text Area</h2>
+      <textarea placeholder="Type Something" id="textarea" maxlength="200"></textarea>
+      <p id ="count">Count : 0/200</p>
+      <p id="alerts" style="display: none; color: red">
+        ⚠️ Limit exceeded! Max 200 characters.
+      </p>
+    </div>
+
+    <script src="./proj2.js">
+  
+    </script>
+
+  </body>
+</html>
